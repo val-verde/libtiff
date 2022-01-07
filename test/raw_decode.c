@@ -64,7 +64,7 @@
 */
 
 /* Define "boolean" as unsigned char, not int, per Windows custom. */
-#if defined(__WIN32__) && !defined(__MINGW32__)
+#if defined(__WIN32__)
 # ifndef __RPCNDR_H__            /* don't conflict if rpcndr.h already read */
    typedef unsigned char boolean;
 # endif
